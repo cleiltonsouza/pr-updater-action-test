@@ -1,0 +1,15 @@
+name: 'Testando GitHub Action'
+
+on:
+  pull_request:
+    types: 
+      - opened
+jobs:
+  pr-updater:
+    runs-on: ubuntu-latest
+    steps:
+      - name: update pull request description
+        uses: cleiltonsouza/pr-upater-action@main
+        with:
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
+      
