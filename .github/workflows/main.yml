@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: update pull request description
-        uses: cleiltonsouza/pr-upater-action@main
+        uses: cleiltonsouza/pr-updater-action@main
         with:
           accessToken: ${{ secrets.GITHUB_TOKEN }}
       
